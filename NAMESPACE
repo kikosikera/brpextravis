@@ -1,0 +1,10 @@
+#exportPattern("^[[:alpha:]]+")
+export("brpextravis")
+
+import(dplyr)
+import(readr)
+import(magrittr)
+import(tidyr)
+importFrom("maps", "map")
+importFrom("graphics", "points")
+
