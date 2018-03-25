@@ -10,7 +10,7 @@ fars_map_state(state.num, year)
 \item{state.num}{An integer of 4 indicating the state number. Valid values
 are 1 to 51, except 3}
 
-\item{years}{An vector of 4 digit integer or string indicating the year}
+\item{year}{A 4 digit integer or string indicating the year}
 }
 \value{
 This function does not have any return value, but it will plot it will
@@ -33,6 +33,6 @@ code will not be trigerred due to a check to ensure the \code{state.num} filter
 parameter is in the data set.
 }
 \examples{
-   fars_map_state(1,2015)
+   \dontrun{fars_map_state(1,2015)}
 
 }

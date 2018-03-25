@@ -7,18 +7,18 @@
 make_filename(year)
 }
 \arguments{
-\item{year}{An 4 digit integer or string indicating the year}
+\item{year}{A 4 digit integer or string indicating the year}
 }
 \value{
 This function returns a FARS filename corresponding to the
    year.
 }
 \description{
-This is a function that takes 4 digit \code{year} as input and 
+This is a function that takes 4 digit \code{year} as input and
 construct the FARS filename for the year.
 }
 \examples{
-   make_filename(2015)
-   make_filename("2015")
+   \dontrun{make_filename(2015)}
+   \dontrun{make_filename("2015")}
 
 }

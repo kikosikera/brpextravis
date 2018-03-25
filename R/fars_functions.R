@@ -36,7 +36,7 @@ fars_read <- function(filename) {
 #' This is a function that takes 4 digit \code{year} as input and
 #' construct the FARS filename for the year.
 #'
-#' @param year An 4 digit integer or string indicating the year
+#' @param year A 4 digit integer or string indicating the year
 #'
 #' @return This function returns a FARS filename corresponding to the
 #'    year.
@@ -130,7 +130,7 @@ fars_summarize_years <- function(years) {
 #'
 #' @param state.num An integer of 4 indicating the state number. Valid values
 #'    are 1 to 51, except 3
-#' @param years An vector of 4 digit integer or string indicating the year
+#' @param year A 4 digit integer or string indicating the year
 #'
 #' @return This function does not have any return value, but it will plot it will
 #'    plot a heat map of the accident for the given state and year.
