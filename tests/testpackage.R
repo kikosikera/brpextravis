@@ -1,4 +1,4 @@
-install.packages("testthat")
+install.packages("testthat",repos = "http://cran.us.r-project.org",quiet=TRUE)
 library(testthat)
 
 
