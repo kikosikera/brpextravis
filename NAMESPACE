@@ -6,9 +6,9 @@ export("fars_summarize_years")
 export("fars_map_state")
 
 import(dplyr)
-import(readr)
-import(magrittr)
-import(tidyr)
+importFrom("readr","read_csv")
+importFrom("magrittr","%>%")
+importFrom("tidyr","spread")
 importFrom("maps", "map")
 importFrom("graphics", "points")
 
