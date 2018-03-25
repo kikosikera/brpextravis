@@ -16,12 +16,6 @@ knitr::opts_chunk$set(
 )
 ```
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
-library(readr)
-library(dplyr)
-library(tidyr)
-library(magrittr)
-library(maps)
-library(graphics)
 library(knitr)
 ```
 
@@ -35,7 +29,7 @@ The package contains 5 functions:
 1. **fars_read** that takes string filename as input and returns full data from the file in data frame.
 2. **make_filename** that takes integer year as input and returns FARS source data filename for the given year.
 3. **fars_read_years** that takes a vector of integer years as input and returns a list of data frames containing fatality incidents for every months for each given year.
-4. **fars_summarize_years** that takes a vector of integer years as input and returns a summarized data frame containing the number of incidents for every month & year. Years are represented in the columns and months are represented in the rows
+4. **fars_summarize_years** that takes a vector of integer years as input and returns a summarized data frame containing the number of incidents for every month & year. Month and Years are represented in the columns.
 5. **fars_map_state** that takes an integer state number and integer year as inputs and returns a state map with plots, where each dot represents a fatality incident.
 
 ## Sample Data
