@@ -16,7 +16,7 @@ This function returns a data frame with FARS data for summarized
 \description{
 This is a function that takes a vector of 4 digit, called \code{years},
 as input, read FARS data into a list of data frames, one for each year
-via \dontrun{fars_read_years}. These multi-year FARS data will be summarized
+via \code{fars_read_years}. These multi-year FARS data will be summarized
 by counting the number of rows that exist for each year and month.
 The summarized data frame will have months as rows, and years as columns, while
 the row counts as the intersection of rows and columns.

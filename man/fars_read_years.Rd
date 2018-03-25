@@ -16,7 +16,7 @@ This function returns a list of data frame with FARS data for
 \description{
 This is a function that takes a vector of 4 digit, called \code{years},
 as input and read FARS data into a list of data frames, one for each year.
-Each of the year input is converted to FARS filename via \dontrun{make_filename}.
+Each of the year input is converted to FARS filename via \code{make_filename}.
 Each data frame only contains the year and month. If FARS data file
 is not available any of the given year, the list entry for that year
 will be NULL

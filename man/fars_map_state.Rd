@@ -19,7 +19,7 @@ This function does not have any return value, but it will plot it will
 \description{
 This is a function that takes an integer representing \code{state.num}
 and 4 digit \code{year} as input and FARS data into a data frames using
-\dontrun{make_filename} and \dontrun{fars_read}.
+\code{make_filename} and \code{fars_read}.
 The FARS data is filtered by \code{state.num}, and if the filter criteria
 does not exist in the dataset, the function will throw an error for invalid state.
 The filtered data will be plotted as a heat map where area with more accidents

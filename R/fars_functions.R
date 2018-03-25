@@ -55,7 +55,7 @@ make_filename <- function(year) {
 #'
 #' This is a function that takes a vector of 4 digit, called \code{years},
 #' as input and read FARS data into a list of data frames, one for each year.
-#' Each of the year input is converted to FARS filename via \dontrun{make_filename}.
+#' Each of the year input is converted to FARS filename via \code{make_filename}.
 #' Each data frame only contains the year and month. If FARS data file
 #' is not available any of the given year, the list entry for that year
 #' will be NULL
@@ -90,7 +90,7 @@ fars_read_years <- function(years) {
 #'
 #' This is a function that takes a vector of 4 digit, called \code{years},
 #' as input, read FARS data into a list of data frames, one for each year
-#' via \dontrun{fars_read_years}. These multi-year FARS data will be summarized
+#' via \code{fars_read_years}. These multi-year FARS data will be summarized
 #' by counting the number of rows that exist for each year and month.
 #' The summarized data frame will have months as rows, and years as columns, while
 #' the row counts as the intersection of rows and columns.
@@ -121,7 +121,7 @@ fars_summarize_years <- function(years) {
 #'
 #' This is a function that takes an integer representing \code{state.num}
 #' and 4 digit \code{year} as input and FARS data into a data frames using
-#' \dontrun{make_filename} and \dontrun{fars_read}.
+#' \code{make_filename} and \code{fars_read}.
 #' The FARS data is filtered by \code{state.num}, and if the filter criteria
 #' does not exist in the dataset, the function will throw an error for invalid state.
 #' The filtered data will be plotted as a heat map where area with more accidents
