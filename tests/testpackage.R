@@ -1,4 +1,6 @@
-install.packages("testthat",repos = "http://cran.us.r-project.org",quiet=TRUE)
+if(!require("praise")) install.packages("praise",repos = "http://cran.us.r-project.org",quiet=TRUE)
+if(!require("withr")) install.packages("withr",repos = "http://cran.us.r-project.org",quiet=TRUE)
+if(!require("testthat")) install.packages("testthat",repos = "http://cran.us.r-project.org",quiet=TRUE)
 library(testthat)
 
 
