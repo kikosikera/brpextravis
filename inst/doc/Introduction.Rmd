@@ -38,7 +38,8 @@ The package contains 5 functions:
 Raw Data are read using 'fars_read', and the filename construction can be facilitated by 'make_filename'.
 Example:
 ```{r sample2013_data}
-fars_2013 <- fars_read(make_filename(2013)) 
+filename <- make_filename(2013)
+fars_2013 <- fars_read(file.path("..","extdata",filename)) 
 dim(fars_2013)
 fars_2013
 ```
