@@ -20,4 +20,4 @@ To get started, read the introduction vignette: `vignette('brpextravis', package
 
 ### Travis Badge
 
-[![Build Status](https://travis-ci.org/sbudiman/brpextravis,svg?branch=master)](https://travis-ci.org/sbudiman/brpextravis)
+[![Build Status](https://travis-ci.org/sbudiman/brpextravis.svg?branch=master)](https://travis-ci.org/sbudiman/brpextravis)
