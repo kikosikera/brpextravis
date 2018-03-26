@@ -1,10 +1,10 @@
 ---
-title: "brpextravis package for reading and summarizing FARS data"
+title: "Introduction to brpextravis package for reading and summarizing FARS data"
 author: "San Budiman"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{brpextravis}
+  %\VignetteIndexEntry{introduction}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -17,6 +17,7 @@ knitr::opts_chunk$set(
 ```
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 library(knitr)
+library(brpextravis)
 ```
 
 brpextravis package contains functions that read US National Highway Traffic Safety Administration's Fatality Analysis Reporting System (FARS) data and summarize them. The source data is from the [https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars](https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars).
@@ -32,12 +33,22 @@ The package contains 5 functions:
 4. **fars_summarize_years** that takes a vector of integer years as input and returns a summarized data frame containing the number of incidents for every month & year. Month and Years are represented in the columns.
 5. **fars_map_state** that takes an integer state number and integer year as inputs and returns a state map with plots, where each dot represents a fatality incident.
 
+## Reading Raw Data
+
+Raw Data are read using 'fars_read', and the filename construction can be facilitated by 'make_filename'.
+Example:
+```{r sample2013_data}
+fars_2013 <- fars_read(make_filename(2013)) 
+dim(fars_2013)
+fars_2013
+```
+
 ## Sample Summarized Data
 
 The package comes with a sample summarized yearly data for year 2013 to 2015 called farsyrsum. It is the output of `fars_summarize_years(2013:2015)`.
 
 ```{r farsyrsum}
-filename <- file.path("..","data","farsyrsum.rda")
+filename <- file.path("..","..","data","farsyrsum.rda")
 load(filename)
 knitr::kable(farsyrsum)
 ```
