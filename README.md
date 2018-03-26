@@ -7,12 +7,17 @@ Date: March 25, 2018
 
 ### Installation
 
-To install this package to run on your system, please first install and load the `devtools` package. Then you may install and load this package thus:
+To install this package to run on your system, please first install and load the `devtools` package. Then you may install and load this package:
 
 ```R
-install_github('sbudiman/brpextravis')
+install_github('sbudiman/brpextravis',build_vignettes = TRUE)
 library(brpextravis)
 ```
+
+### Vignette
+
+If you install with build_vignettes = TRUE, then you can read the introduction vignette: `vignette('brpextravis', package = 'brpextravis')`.
+
 
 ### Travis Badge
 
