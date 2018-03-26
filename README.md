@@ -14,10 +14,6 @@ install_github('sbudiman/brpextravis')
 library(brpextravis)
 ```
 
-### Vignette
-
-To get started, read the introduction vignette: `vignette('brpextravis', package = 'brpextravis')`.
-
 ### Travis Badge
 
 [![Build Status](https://travis-ci.org/sbudiman/brpextravis.svg?branch=master)](https://travis-ci.org/sbudiman/brpextravis)
