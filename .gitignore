@@ -2,5 +2,3 @@
 .Rhistory
 .RData
 .Ruserdata
-#https://github.com/STAT545-UBC/Discussion/issues/68
-#inst/doc -- as per info from google, commenting this will make vignette to show when invoked.
